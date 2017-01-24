@@ -15,7 +15,6 @@ def api_get(url, dict_name):
 def topos_lld(ip, dict_name):
     url = 'http://{0}:9988/api/v1/topology/summary'.format(ip)
     ring = api_get(url, dict_name)
-    print ring
     topos = []
     for topo in ring:
         topo_id = topo.get("id")
