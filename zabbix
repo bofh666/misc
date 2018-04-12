@@ -1,0 +1,4 @@
+Defaults:zabbix !requiretty
+Defaults:zabbix !syslog
+
+zabbix ALL=(ALL) NOPASSWD: /usr/sbin/megacli -ldinfo -lALL -aALL, /usr/sbin/smartctl *, /etc/zabbix/zabbix_agentd.d/lld_diskstats.sh
